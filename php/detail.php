@@ -1,7 +1,9 @@
 <?php
 
-$id = $_GET['id'];
 require_once('funcs.php');
+// functionにlogincheckの機能を持っていく
+loginCheck();
+$id = $_GET['id']; //?id~**を受け取る<div class="$pdo = db_conn();にはid情報を使うため上に持ってくる
 $pdo = db_conn();
 
 //２．データ登録SQL作成

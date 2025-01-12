@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<header>
+    <p class="link_title"><a href="php/select.php">一覧表示</a></p>
+    <p class="link_title"><a href="php/logout.php">ログアウト</a></p>
+</header>
+
 <body>
     <div class="card">
         <span class="card__title">次の25分で何をする？</span>
@@ -22,7 +27,6 @@
                 <label for="next">③次からはこうしたい</label>
                 <input type="text" class="next" name="next" placeholder="次はこうする"><br>
                 <input type="submit" class="submit" value="確認する">
-                <p class="submit"><a href="php/select.php">一覧表示</a></p>
             </form>
         </div>
     </div>

@@ -92,7 +92,7 @@ if ($_SESSION['kanri_flg'] === 1) {
         </div>
     </div>
     <!-- Main[End] -->
-
+    <a href="logout.php">ログアウト</a>
 </body>
 
 </html>

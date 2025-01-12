@@ -3,7 +3,10 @@
 $id    = $_GET['id'];
 
 //2. DB接続します
+session_start();
 require_once('funcs.php');
+loginCheck();
+$id = $_GET['id'];
 $pdo = db_conn();
 
 //３．データ登録SQL作成
