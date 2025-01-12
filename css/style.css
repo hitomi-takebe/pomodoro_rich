@@ -31,11 +31,11 @@ header {
     border-bottom: 1px solid #dee2e6;
 }
 
-header .link_title {
+.link_title {
     margin: 0;
 }
 
-header .link_title a {
+.link_title a {
     text-decoration: none;
     color: #007bff;
     padding: 10px 15px;
@@ -44,7 +44,7 @@ header .link_title a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-header .link_title a:hover {
+.link_title a:hover {
     background-color: #007bff;
     color: #fff;
 }
