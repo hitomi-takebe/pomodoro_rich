@@ -32,7 +32,9 @@ header {
 }
 
 .link_title {
-    margin: 0;
+    /* ここにスタイルを記述 */
+    color: black;
+    font-weight: bold;
 }
 
 .link_title a {
