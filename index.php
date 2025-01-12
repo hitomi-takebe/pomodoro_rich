@@ -22,7 +22,6 @@ loginCheck(); // loginCheck 関数を呼び出し
     <p class="link_title"><a href="php/logout.php">ログアウト</a></p>
     <p class="link_title"><a href="php/login.php">ログイン</a></p>
 </header>
-</header>
 
 <body>
     <div class="card">
