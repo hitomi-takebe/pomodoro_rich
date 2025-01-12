@@ -27,7 +27,7 @@ loginCheck(); // loginCheck 関数を呼び出し
     <div class="card">
         <span class="card__title">次の25分で何をする？</span>
         <div class="card__form">
-            <form action="index_confirm.php" method="post">
+            <form action="form_confirm.php" method="post">
 
                 <label for="todo">①todo</label>
                 <input type="text" class="todo" name="todo" placeholder="何をする予定？"><br>
