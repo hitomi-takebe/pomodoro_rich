@@ -1,3 +1,9 @@
+<?php
+session_start();
+require_once('funcs.php');
+loginCheck();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +14,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<header>
+    <p class="link_title"><a href="../index.php">入力</a></p>
+    <p class="link_title"><a href="select.php">一覧表示</a></p>
+    <p class="link_title"><a href="howtouse.php">使い方</a></p>
+    <p class="link_title"><a href="logout.php">ログアウト</a></p>
+    <p class="link_title"><a href="login.php">ログイン</a></p>
+</header>
 
 <body>
     <div class="card">

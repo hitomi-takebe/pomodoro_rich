@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 require_once('funcs.php');
-// functionにlogincheckの機能を持っていく
 loginCheck();
+
 $id = $_GET['id']; //?id~**を受け取る<div class="$pdo = db_conn();にはid情報を使うため上に持ってくる
 $pdo = db_conn();
 
@@ -27,7 +27,7 @@ if ($status === false) {
 
 <head>
     <meta charset="UTF-8">
-    <title>データ登録</title>
+    <title>タイマー開始</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
@@ -38,18 +38,27 @@ if ($status === false) {
     </style>
 </head>
 
+<header>
+    <p class="link_title"><a href="../index.php">入力</a></p>
+    <p class="link_title"><a href="select.php">一覧表示</a></p>
+    <p class="link_title"><a href="howtouse.php">使い方</a></p>
+    <p class="link_title"><a href="logout.php">ログアウト</a></p>
+    <p class="link_title"><a href="login.php">ログイン</a></p>
+</header>
+
 <body>
-    <header>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="submit"><a class="navbar-brand" href="select.php">データ一覧</a></div>
-            </div>
-        </nav>
-    </header>
+    <!-- タイマー -->
+    <div id="timer">
+        <h1>タイマー</h1>
+        <p><span id="minutes"></span>分</p>
+        <p><span id="seconds"></span>秒</p>
+        <button id="startButton" class="submit">タイマー開始</button>
+    </div>
 
     <!-- method, action, 各inputのnameを確認してください。  -->
     <form method="POST" action="update.php">
         <div class="jumbotron">
+            <h1>入力</h1>
             <fieldset>
                 <label>todo：<input type="text" name="todo" value="<?= $result['todo'] ?>"></label><br>
                 <label>振り返り：<input type="text" name="ref" value="<?= $result['ref'] ?>"></label><br>
@@ -59,12 +68,7 @@ if ($status === false) {
             </fieldset>
         </div>
     </form>
-    <!-- タイマー -->
-    <div id="timer">
-        <p><span id="minutes"></span>分</p>
-        <p><span id="seconds"></span>秒</p>
-        <button id="startButton" class="submit">タイマー開始</button>
-    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="../js/timer.js"></script>

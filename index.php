@@ -1,3 +1,9 @@
+<?php
+session_start();
+require_once('php/funcs.php');// funcs.php ファイルをインクルード
+loginCheck(); // loginCheck 関数を呼び出し
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +16,12 @@
 </head>
 
 <header>
+    <p class="link_title"><a href="index.php">入力</a></p>
     <p class="link_title"><a href="php/select.php">一覧表示</a></p>
+    <p class="link_title"><a href="php/howtouse.php">使い方</a></p>
     <p class="link_title"><a href="php/logout.php">ログアウト</a></p>
+    <p class="link_title"><a href="php/login.php">ログイン</a></p>
+</header>
 </header>
 
 <body>

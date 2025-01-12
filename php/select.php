@@ -64,7 +64,11 @@ if ($_SESSION['kanri_flg'] === 1) {
 </head>
 
 <header>
-    <a class="submit" href="../index.php">戻る</a>
+    <p class="link_title"><a href="../index.php">入力</a></p>
+    <p class="link_title"><a href="select.php">一覧表示</a></p>
+    <p class="link_title"><a href="howtouse.php">使い方</a></p>
+    <p class="link_title"><a href="logout.php">ログアウト</a></p>
+    <p class="link_title"><a href="login.php">ログイン</a></p>
 </header>
 
 <body>
@@ -91,8 +95,6 @@ if ($_SESSION['kanri_flg'] === 1) {
             </table>
         </div>
     </div>
-    <!-- Main[End] -->
-    <a href="logout.php">ログアウト</a>
 </body>
 
 </html>
