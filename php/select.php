@@ -66,7 +66,7 @@ if ($_SESSION['kanri_flg'] === 1) {
 <header>
     <p class="link_title"><a href="form.php">入力</a></p>
     <p class="link_title"><a href="select.php">一覧表示</a></p>
-    <p class="link_title"><a href="../howtouse.php">使い方</a></p>
+    <p class="link_title"><a href="../index.php">使い方</a></p>
     <p class="link_title"><a href="logout.php">ログアウト</a></p>
     <p class="link_title"><a href="login.php">ログイン</a></p>
 </header>
