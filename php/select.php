@@ -32,11 +32,15 @@ if ($status === false) {
             $view .= '[削除]';
             $view .= '</a>';
             $view .= '</td>';
-            // $sakuzyo .= '<th>削除</th>';
-            $sakuzyo .= '削除';
         }
         $view .= '</tr>';
     }
+}
+
+//管理者ユーザーのみ削除列を追加
+if ($_SESSION['kanri_flg'] === 1) {
+    $sakuzyo .= '<th>削除</th>';
+    // $sakuzyo .= '削除';
 }
 
 ?>
@@ -85,7 +89,6 @@ if ($status === false) {
                     <?= $view ?>
                 </tbody>
             </table>
-            <?= $sakuzyo ?>
         </div>
     </div>
     <!-- Main[End] -->
