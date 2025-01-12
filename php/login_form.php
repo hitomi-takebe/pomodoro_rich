@@ -17,9 +17,9 @@
 </head>
 
 <header>
-    <p class="link_title"><a href="../index.php">入力</a></p>
+    <p class="link_title"><a href="form.php">入力</a></p>
     <p class="link_title"><a href="select.php">一覧表示</a></p>
-    <p class="link_title"><a href="howtouse.php">使い方</a></p>
+    <p class="link_title"><a href="../howtouse.php">使い方</a></p>
     <p class="link_title"><a href="logout.php">ログアウト</a></p>
     <p class="link_title"><a href="login.php">ログイン</a></p>
 </header>
@@ -36,7 +36,7 @@
                 <input type="password" class="password" name="password" placeholder="Your Password"><br>
                 <input type="submit" class="submit" value="ログイン">
             </form>
-            <p class="submit"><a href="../index.php">会員登録をする</a></p>
+            <p class="submit"><a href="form.php">会員登録をする</a></p>
         </div>
     </div>
 </body>

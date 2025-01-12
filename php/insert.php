@@ -27,7 +27,7 @@ if($status === false){
   $error = $stmt->errorInfo();
   exit('ErrorMessage:'.$error[2]);
 }else{
-  // ５．index.phpへリダイレクト
+  // ５．form.phpへリダイレクト
     header('Location:select.php');
 }
 ?>

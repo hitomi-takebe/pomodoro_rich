@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('php/funcs.php');// funcs.php ファイルをインクルード
+require_once('funcs.php');// funcs.php ファイルをインクルード
 loginCheck(); // loginCheck 関数を呼び出し
 ?>
 
@@ -11,23 +11,23 @@ loginCheck(); // loginCheck 関数を呼び出し
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポモドーロアプリ</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <header>
-    <p class="link_title"><a href="index.php">入力</a></p>
-    <p class="link_title"><a href="php/select.php">一覧表示</a></p>
-    <p class="link_title"><a href="php/howtouse.php">使い方</a></p>
-    <p class="link_title"><a href="php/logout.php">ログアウト</a></p>
-    <p class="link_title"><a href="php/login.php">ログイン</a></p>
+    <p class="link_title"><a href="form.php">入力</a></p>
+    <p class="link_title"><a href="select.php">一覧表示</a></p>
+    <p class="link_title"><a href="../howtouse.php">使い方</a></p>
+    <p class="link_title"><a href="logout.php">ログアウト</a></p>
+    <p class="link_title"><a href="login.php">ログイン</a></p>
 </header>
 
 <body>
     <div class="card">
         <span class="card__title">次の25分で何をする？</span>
         <div class="card__form">
-            <form action="php/index_confirm.php" method="post">
+            <form action="index_confirm.php" method="post">
 
                 <label for="todo">①todo</label>
                 <input type="text" class="todo" name="todo" placeholder="何をする予定？"><br>

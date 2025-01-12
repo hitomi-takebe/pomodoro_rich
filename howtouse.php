@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>使い方</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .submit {
             max-width: 300px;
@@ -15,11 +15,11 @@
 </head>
 
 <header>
-    <p class="link_title"><a href="../index.php">入力</a></p>
-    <p class="link_title"><a href="select.php">一覧表示</a></p>
+    <p class="link_title"><a href="php/form.php">入力</a></p>
+    <p class="link_title"><a href="php/select.php">一覧表示</a></p>
     <p class="link_title"><a href="howtouse.php">使い方</a></p>
-    <p class="link_title"><a href="logout.php">ログアウト</a></p>
-    <p class="link_title"><a href="login.php">ログイン</a></p>
+    <p class="link_title"><a href="php/logout.php">ログアウト</a></p>
+    <p class="link_title"><a href="php/login.php">ログイン</a></p>
 </header>
 
 <body>
@@ -30,4 +30,3 @@
 </body>
 
 </html>
-
