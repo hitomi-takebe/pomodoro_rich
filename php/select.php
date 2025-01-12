@@ -1,14 +1,21 @@
 <?php
 //1.データ登録
+
+session_start();
 require_once('funcs.php');
-$pdo = db_conn();
+// functionにlogincheckの機能を持っていく
+loginCheck();
+
 
 //２．データ登録SQL作成
+$pdo = db_conn();
 $stmt = $pdo->prepare('SELECT * FROM pomodoro;');
 $status = $stmt->execute();
 
 //３．データ表示
 $view = '';
+$sakuzyo = '';
+
 if ($status === false) {
     $error = $stmt->errorInfo();
     exit('SQLError:' . print_r($error, true));
@@ -19,11 +26,14 @@ if ($status === false) {
         $view .= '<a href="detail.php?id=' . $result['id'] .  '">' . $result['id'] . '</a>';
         $view .= '</td>';
         $view .= '<td> ' . $result['date'] . '</td><td>' . $result['todo'] . '</td><td>' . $result['ref'] . '</td><td>' . $result['next'] . '</td>';
-        $view .= '<td>';
-        $view .= '<a href="delete.php?id=' . $result['id'] .  '">';
-        $view .= '[削除]';
-        $view .= '</a>';
-        $view .= '</td>';
+        if ($_SESSION['kanri_flg'] === 1) {
+            $view .= '<td>';
+            $view .= '<a href="delete.php?id=' . $result['id'] .  '">';
+            $view .= '[削除]';
+            $view .= '</a>';
+            $view .= '</td>';
+            $sakuzyo .= '<th>削除</th>';
+        }
         $view .= '</tr>';
     }
 }
@@ -67,7 +77,7 @@ if ($status === false) {
                         <th>①todo</th>
                         <th>②振り返り</th>
                         <th>③次からはこうしたい</th>
-                        <th>削除</th>
+                        <?= $sakuzyo?>
                     </tr>
                 </thead>
                 <tbody>
