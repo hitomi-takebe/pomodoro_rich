@@ -32,7 +32,8 @@ if ($status === false) {
             $view .= '[削除]';
             $view .= '</a>';
             $view .= '</td>';
-            $sakuzyo .= '<th>削除</th>';
+            // $sakuzyo .= '<th>削除</th>';
+            $sakuzyo .= '削除';
         }
         $view .= '</tr>';
     }
@@ -77,13 +78,14 @@ if ($status === false) {
                         <th>①todo</th>
                         <th>②振り返り</th>
                         <th>③次からはこうしたい</th>
-                        <?= $sakuzyo?>
+                        <?= $sakuzyo ?>
                     </tr>
                 </thead>
                 <tbody>
                     <?= $view ?>
                 </tbody>
             </table>
+            <?= $sakuzyo ?>
         </div>
     </div>
     <!-- Main[End] -->
