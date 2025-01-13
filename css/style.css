@@ -141,3 +141,32 @@ header {
 {
     background-color: #2b9aa5;
 }
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #abdc3960;
+    color: #666;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #e2e8ac;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
