@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>使い方</title>
+    <title>ログイン</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <style>
@@ -23,12 +23,12 @@
 </header>
 
 <body>
-    <h1>ログイン</h1>
+    <h1>ログインページ</h1>
     <!-- <   !-- lLOGINogin_act.php は認証処理用のPHPです。 -->
     <form name="form1" action="login_act.php" method="post">
-        ID:<input type="text" name="lid" />
-        PW:<input type="password" name="lpw" />
-        <input type="submit" value="LOGIN" />
+        ID:<input type="text" name="lid" /></br>
+        PW:<input type="password" name="lpw" /><br>
+        <input type="submit" class="submit" value="LOGIN" />
     </form>
 </body>
 
